@@ -1,2 +1,3 @@
-Readme File for Intervalidate.Org's Free Beck Online Depression Index Exam.  It it a website that will be hosted on Godaddy using MySql
+# Intervalidate.Org's Free Online Beck Depression Index
+Intervalidate.Org's Free Beck Online Depression Index Exam.  It it a website that will be hosted on Godaddy using MySql
 as the Relational Database Server.  
