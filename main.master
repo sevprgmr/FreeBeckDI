@@ -1,0 +1,43 @@
+<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+    protected void LinkButton1_Click(object sender, EventArgs e)
+    {
+        Session.Abandon();
+        Response.Redirect("default.aspx");
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="shortcut icon" href="~/favicon.ico"/>
+    <title>Free Online Beck's Anxiety & Depression Inventory</title>
+</head>
+<body>
+<form runat="server">
+     <table width="100%">
+        <tr  style="height:200px">
+          <td colspan="2" style="height:10px">
+          <h1>Free Online Beck's Anxiety & Depression Inventory</h1>
+          </td>
+        </tr>
+        <tr>
+        <td width="10%" bgcolor="#dddddd" valign="top">
+             <a href="takeexam.aspx">Take Exam</a>
+             <p />
+             <a href="previousexams.aspx">Previous Exams</a>
+             <p />
+<%--             <a href="changepassword.aspx">Change Password</a>--%>
+             <p>
+             <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" OnClick="LinkButton1_Click">Logout</asp:LinkButton> 
+             </p>
+             </td>
+             <td valign="top">
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+             </td>
+          </tr>
+        </table>
+    </form>
+</body>
+</html>
